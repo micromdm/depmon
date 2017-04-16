@@ -1,0 +1,9 @@
+#!/bin/bash
+
+[[ $3 != "/" ]] && exit 0
+
+/bin/launchctl stop io.micromdm.depnag
+/bin/launchctl unload /Library/LaunchDaemons/io.micromdm.depnag.plist
+/bin/launchctl load /Library/LaunchDaemons/io.micromdm.depnag.plist
+
+exit 0

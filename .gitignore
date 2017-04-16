@@ -1,0 +1,5 @@
+.DS_Store
+cmd/depmon/depmon
+cmd/depnag/depnag
+build/
+pkgroot/usr/local/bin/depnag
